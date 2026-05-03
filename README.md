@@ -1,82 +1,108 @@
-AMD-Powered LLM Stack on AWS EC2 (g4ad.16xlarge)
+# 🚀 AMD LLM Stack on AWS (EPYC + Ollama + WebUI)
 
-This project demonstrates a high-performance, production-ready LLM deployment running on AWS EC2 g4ad.16xlarge, powered by AMD EPYC CPUs and Radeon Pro GPUs, optimized for running multiple local LLMs efficiently via Ollama and Open WebUI.
+![AWS](https://img.shields.io/badge/AWS-EC2-orange)
+![AMD](https://img.shields.io/badge/CPU-AMD%20EPYC-red)
+![LLM](https://img.shields.io/badge/LLMs-6%20Models-blue)
+![Docker](https://img.shields.io/badge/Docker-Enabled-blue)
 
-⚡ Instance Overview
+---
 
-The g4ad.16xlarge instance delivers a powerful balance of CPU, GPU, and memory:
+## ⚡ Overview
 
-CPU: AMD EPYC (2nd Gen “Rome” architecture)
-vCPUs: 64
-Memory: 256 GB RAM
-GPU: 4× AMD Radeon Pro V520
-Storage: High-throughput NVMe SSD
+This project runs a **multi-LLM stack (6 models)** on an  
+**AWS EC2 g4ad.16xlarge instance**, powered by:
 
-This architecture is designed for parallel workloads, high memory bandwidth, and GPU-accelerated inference, making it ideal for multi-model LLM environments.
+- 🧠 **AMD EPYC (Rome) CPU**
+- 🎮 **AMD Radeon Pro V520 GPUs**
+- 🐳 Docker-based deployment
+- 🌐 Open WebUI for multi-user access
 
-🧠 Multi-LLM Execution (6 Models Concurrently)
+---
 
-This setup runs multiple LLMs simultaneously using Ollama:
+## 🖥️ Instance Specs
 
-llama3.2
-qwen2.5
-mistral
-phi3
-gemma3
-lightweight models (1b–7b) for fast inference
-Key Advantages:
-Model switching without reload delays
-Efficient memory utilization via dynamic loading
-Parallel request handling across sessions
-Optimized CPU-bound inference performance
+| Component | Details |
+|----------|--------|
+| Instance | `g4ad.16xlarge` |
+| CPU | AMD EPYC (2nd Gen - Rome) |
+| vCPUs | 64 |
+| RAM | 256 GB |
+| GPU | 4× AMD Radeon Pro V520 |
 
-Even without GPU acceleration, the EPYC CPU’s high core count allows:
+---
 
-fast token generation
-low latency for smaller models
-stable multi-user workloads via Open WebUI
-🔥 Performance Characteristics
-On AMD EPYC CPU:
-Strong multi-threaded inference
-Reliable for 1B–7B models
-Scales well with concurrent users
-Ideal for development, testing, and lightweight production
-Bottlenecks:
-Larger models (13B–14B+) introduce latency
-CPU-only inference limits peak throughput
-🚀 What Changes with AMD Instinct GPUs?
+## 🧠 LLM Stack
 
-If this stack is deployed on AMD Instinct GPUs (MI210 / MI250 / MI300):
+Running via **Ollama**:
 
-Massive Gains:
-⚡ 10–50× faster inference
-🧠 Efficient handling of large models (13B–70B+)
-🔄 Real-time streaming across multiple users
-📈 Higher throughput and lower latency
-Why:
-ROCm-accelerated tensor operations
-High-bandwidth memory (HBM)
-Parallel GPU compute optimized for AI workloads
-🏗️ Architecture
-Users (WebUI)
-     ↓
-Open WebUI (Docker, port 3000)
-     ↓
+- `llama3.2`
+- `qwen2.5`
+- `mistral`
+- `phi3`
+- `gemma3`
+- lightweight models (`1B–7B`) for speed
+
+---
+
+## ⚡ Performance
+
+### ✅ CPU (EPYC)
+- Fast inference for **1B–7B models**
+- Handles **multiple users simultaneously**
+- Stable and scalable
+
+### ⚠️ Limitations
+- Larger models (13B+) slower on CPU
+- GPU not fully utilized in this setup
+
+---
+
+## 🚀 With AMD Instinct GPUs
+
+Switching to **AMD Instinct (MI250 / MI300)** would:
+
+- ⚡ 10–50× faster inference
+- 🧠 Run large models (30B–70B+)
+- 🔥 Real-time multi-user performance
+
+---
+
+## 🏗️ Architecture
+
+Browser (Users)
+↓
+Open WebUI (Docker :3000)
+↓
 Ollama Runtime
-     ↓
-LLM Models (CPU/GPU execution)
-🌐 Key Outcomes
-Fully self-hosted LLM stack on AMD infrastructure
-Multi-model orchestration with dynamic loading
-Scalable across CPU-only and GPU-accelerated environments
-Accessible via browser (multi-session, multi-user)
-Portable and reproducible via Docker
-💡 Summary
+↓
+LLM Models (CPU / GPU)
 
-The g4ad.16xlarge instance proves that AMD EPYC CPUs can effectively power a multi-LLM environment, delivering strong performance for small-to-medium models with excellent scalability.
 
-When combined with AMD Instinct GPUs, this architecture transforms into a high-throughput AI inference platform, capable of serving large-scale LLM workloads with enterprise-grade performance.
+---
 
-One of the references:
+## 🌐 Features
 
-https://www.amd.com/en/developer/resources/technical-articles/running-llms-locally-on-amd-gpus-with-ollama.html
+- Multi-model switching
+- Multi-user WebUI access
+- Dockerized deployment
+- Fully self-hosted LLM stack
+
+---
+
+## 💡 Why This Matters
+
+This setup proves:
+
+👉 AMD EPYC can **reliably power multi-LLM workloads**  
+👉 Scales from **CPU-only → GPU-accelerated AI**  
+👉 Ready for real-world inference environments  
+
+---
+
+## 🔥 Next Steps
+
+- Add AMD Instinct GPU support (ROCm)
+- Benchmark token/sec performance
+- Automate deployment (Terraform / scripts)
+
+---
