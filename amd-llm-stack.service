@@ -1,0 +1,12 @@
+[Unit]
+Description=AMD LLM Stack - Ollama + WebUI
+After=network.target docker.service ollama.service
+Wants=docker.service ollama.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/bash -c 'sleep 10 && docker restart open-webui'
+
+[Install]
+WantedBy=multi-user.target

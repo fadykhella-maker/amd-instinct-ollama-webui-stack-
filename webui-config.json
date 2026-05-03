@@ -1,0 +1,285 @@
+[
+    {
+        "Id": "bb0dbe9f7e0cc558f03a5df265550215f3a12691d1c9a1d80a20887341cdb774",
+        "Created": "2026-05-03T05:54:21.799431883Z",
+        "Path": "bash",
+        "Args": [
+            "start.sh"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 230539,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-05-03T06:07:15.548151004Z",
+            "FinishedAt": "2026-05-03T06:07:15.50504965Z",
+            "Health": {
+                "Status": "starting",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-05-03T06:05:09.122897654Z",
+                        "End": "2026-05-03T06:05:09.202481775Z",
+                        "ExitCode": 0,
+                        "Output": "true\n"
+                    },
+                    {
+                        "Start": "2026-05-03T06:05:39.20464779Z",
+                        "End": "2026-05-03T06:05:39.267950044Z",
+                        "ExitCode": 0,
+                        "Output": "true\n"
+                    },
+                    {
+                        "Start": "2026-05-03T06:06:09.270281803Z",
+                        "End": "2026-05-03T06:06:09.341461737Z",
+                        "ExitCode": 0,
+                        "Output": "true\n"
+                    },
+                    {
+                        "Start": "2026-05-03T06:06:39.343353636Z",
+                        "End": "2026-05-03T06:06:39.416214452Z",
+                        "ExitCode": 0,
+                        "Output": "true\n"
+                    },
+                    {
+                        "Start": "2026-05-03T06:07:09.417575522Z",
+                        "End": "2026-05-03T06:07:09.490571181Z",
+                        "ExitCode": 0,
+                        "Output": "true\n"
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:c2e4723fdbca5de8f9f0529e22b78acf5bc312a88da730bed88860063d028fe8",
+        "ResolvConfPath": "/var/lib/docker/containers/bb0dbe9f7e0cc558f03a5df265550215f3a12691d1c9a1d80a20887341cdb774/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/bb0dbe9f7e0cc558f03a5df265550215f3a12691d1c9a1d80a20887341cdb774/hostname",
+        "HostsPath": "/var/lib/docker/containers/bb0dbe9f7e0cc558f03a5df265550215f3a12691d1c9a1d80a20887341cdb774/hosts",
+        "LogPath": "/var/lib/docker/containers/bb0dbe9f7e0cc558f03a5df265550215f3a12691d1c9a1d80a20887341cdb774/bb0dbe9f7e0cc558f03a5df265550215f3a12691d1c9a1d80a20887341cdb774-json.log",
+        "Name": "/open-webui",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "open-webui:/app/backend/data"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "3000"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "always",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                47,
+                210
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [
+                "host.docker.internal:host-gateway"
+            ],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "open-webui",
+                "Source": "/var/lib/docker/volumes/open-webui/_data",
+                "Destination": "/app/backend/data",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "bb0dbe9f7e0c",
+            "Domainname": "",
+            "User": "0:0",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "OLLAMA_BASE_URL=http://host.docker.internal:11434",
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+                "PYTHON_VERSION=3.11.14",
+                "PYTHON_SHA256=8d3ed8ec5c88c1c95f5e558612a725450d2452813ddad5e58fdb1a53b1209b78",
+                "PYTHONUNBUFFERED=1",
+                "ENV=prod",
+                "PORT=8080",
+                "USE_OLLAMA_DOCKER=false",
+                "USE_CUDA_DOCKER=false",
+                "USE_SLIM_DOCKER=false",
+                "USE_CUDA_DOCKER_VER=cu128",
+                "USE_EMBEDDING_MODEL_DOCKER=sentence-transformers/all-MiniLM-L6-v2",
+                "USE_RERANKING_MODEL_DOCKER=",
+                "USE_AUXILIARY_EMBEDDING_MODEL_DOCKER=TaylorAI/bge-micro-v2",
+                "OPENAI_API_BASE_URL=",
+                "OPENAI_API_KEY=",
+                "WEBUI_SECRET_KEY=",
+                "SCARF_NO_ANALYTICS=true",
+                "DO_NOT_TRACK=true",
+                "ANONYMIZED_TELEMETRY=false",
+                "WHISPER_MODEL=base",
+                "WHISPER_MODEL_DIR=/app/backend/data/cache/whisper/models",
+                "RAG_EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2",
+                "RAG_RERANKING_MODEL=",
+                "AUXILIARY_EMBEDDING_MODEL=TaylorAI/bge-micro-v2",
+                "SENTENCE_TRANSFORMERS_HOME=/app/backend/data/cache/embedding/models",
+                "TIKTOKEN_ENCODING_NAME=cl100k_base",
+                "TIKTOKEN_CACHE_DIR=/app/backend/data/cache/tiktoken",
+                "HF_HOME=/app/backend/data/cache/embedding/models",
+                "HOME=/root",
+                "UV_LINK_MODE=copy",
+                "WEBUI_BUILD_VERSION=8dae237a0bfdac4b7f55b463b3e2769ea4b94a0b",
+                "DOCKER=true"
+            ],
+            "Cmd": [
+                "bash",
+                "start.sh"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD-SHELL",
+                    "curl --silent --fail http://localhost:${PORT:-8080}/health | jq -ne 'input.status == true' || exit 1"
+                ]
+            },
+            "Image": "ghcr.io/open-webui/open-webui:main",
+            "Volumes": null,
+            "WorkingDir": "/app/backend",
+            "Entrypoint": null,
+            "Labels": {
+                "org.opencontainers.image.created": "2026-04-24T09:56:27.432Z",
+                "org.opencontainers.image.description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+                "org.opencontainers.image.licenses": "NOASSERTION",
+                "org.opencontainers.image.revision": "8dae237a0bfdac4b7f55b463b3e2769ea4b94a0b",
+                "org.opencontainers.image.source": "https://github.com/open-webui/open-webui",
+                "org.opencontainers.image.title": "open-webui",
+                "org.opencontainers.image.url": "https://github.com/open-webui/open-webui",
+                "org.opencontainers.image.version": "main"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "c01523dce23696dbc2d125d0a1ae05b9aadd6820a75ef7fb054bf7e0a4bb1086",
+            "SandboxKey": "/var/run/docker/netns/c01523dce236",
+            "Ports": {},
+            "Networks": {}
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:a1916b8dc645222c6ff14b4ed075c0b2ac39bfb9b63690ec81a3cd0312e224b8",
+            "size": 3713,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]
