@@ -9,6 +9,23 @@
 
 ## ⚡ Overview
 
+🚀 AMD-Powered LLM Stack on AWS EC2 (g4ad.16xlarge)
+
+This project demonstrates a high-performance, production-ready LLM deployment running on AWS EC2 g4ad.16xlarge, powered by AMD EPYC CPUs and Radeon Pro GPUs, optimized for running multiple local LLMs efficiently via Ollama and Open WebUI.
+
+⚡ Instance Overview
+
+The g4ad.16xlarge instance delivers a powerful balance of CPU, GPU, and memory:
+
+CPU: AMD EPYC (2nd Gen “Rome” architecture)
+vCPUs: 64
+Memory: 256 GB RAM
+GPU: 4× AMD Radeon Pro V520
+Storage: High-throughput NVMe SSD
+
+This architecture is designed for parallel workloads, high memory bandwidth, and GPU-accelerated inference, making it ideal for multi-model LLM environments.
+
+
 This project runs a **multi-LLM stack (6 models)** on an  
 **AWS EC2 g4ad.16xlarge instance**, powered by:
 
