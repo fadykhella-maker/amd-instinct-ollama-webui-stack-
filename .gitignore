@@ -1,3 +1,19 @@
+# Ollama models (DO NOT PUSH)
+.ollama/
+models/
+
+# OpenClaw runtime
+.openclaw/
+
+# Logs
+*.log
+
+# Node/Python noise
+node_modules/
+__pycache__/
+
+# Secrets
+.env
 .env
 *.pem
 id_rsa*
